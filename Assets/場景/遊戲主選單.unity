@@ -189,8 +189,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7966d979d9982a743a30e3b75a402b94, type: 3}
       propertyPath: m_Name
-      value: character1
+      value: "\u5E78\u5B58\u8005"
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 7966d979d9982a743a30e3b75a402b94, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8362dd8b1b5fd1c46996f60732fb3479, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3187294714331667617, guid: 7966d979d9982a743a30e3b75a402b94, type: 3}
