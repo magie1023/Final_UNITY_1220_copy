@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2463941270369482424}
   - component: {fileID: 3424242274644635361}
   - component: {fileID: 8855057983904480323}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Demo_CFW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,6 +58,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -86,9 +91,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &702959765139651630
 GameObject:
@@ -101,7 +108,7 @@ GameObject:
   - component: {fileID: 7764157747822690070}
   - component: {fileID: 6414232255613338178}
   - component: {fileID: 839904558038566675}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DemoRails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,6 +155,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -170,9 +182,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1219528581865880109
 GameObject:
@@ -183,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7201298143810836446}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Demo_Grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +233,7 @@ GameObject:
   - component: {fileID: 4653190294692847966}
   - component: {fileID: 5242456065078794601}
   - component: {fileID: 3335513773399001116}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DemoLights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,6 +280,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -287,7 +306,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
