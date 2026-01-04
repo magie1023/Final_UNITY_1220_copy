@@ -1,16 +1,28 @@
 ﻿using UnityEngine;
+using System;
 
 ///<summary>
 ///玩家類別：記錄玩家資料與相關功能
 /// </summary>
-public class Player : MonoBehaviour
+public class Player : Character
 {
+    private static Player _instance;
+    public static Player instance
+    {
+        get
+        {
+            if (_instance == null) _instance = FindAnyObjectByType<Player>();
+            return _instance;
+        }
+    }
+    public event Action onDead;
+
     #region 玩家資料
     // 唯讀屬性：讓外部取得此資料窗口但不能修改
     // 序列化：讓私有欄位可以在編輯器中顯示與修改
     [field: Header("玩家資料")]
-    [field: SerializeField, Range(0, 10)]
-    public float walkSpeed { get; private set; } = 2.5f;
+    //[field: SerializeField, Range(0, 10)]
+   // public float walkSpeed { get; private set; } = 2.5f;
     [field: SerializeField, Range(3, 15)]
     public float runSpeed { get; private set; } = 5f;
     [field: SerializeField, Range(0, 20)]
@@ -20,21 +32,22 @@ public class Player : MonoBehaviour
     [field: SerializeField, Range(0, 3), Tooltip("中斷攻擊連段的時間")]
     public float BreakComboTime { get; private set; } = 1f;
 
-    public Animator ani { get; private set; }
-    public Rigidbody rig { get; private set; }  
-    public string parHorizontal { get; private set; } = "水平";
-    public string parVertical { get; private set; } = "垂直";
+   // public Animator ani { get; private set; }
+   // public Rigidbody rig { get; private set; }  
+
+   // public string parHorizontal { get; private set; } = "水平";
+   // public string parVertical { get; private set; } = "垂直";
     public string parGravity { get; private set; } = "重力";
     public string parJump { get; private set; } = "開關跳躍";
     public string parAttackCombo { get; private set; } = "攻擊段數";
-    public string parTriggerAttack { get; private set; } = "觸發攻擊";
-    public string parTriggerDead { get; private set; } = "觸發死亡";
+   // public string parTriggerAttack { get; private set; } = "觸發攻擊";
+  //  public string parTriggerDead { get; private set; } = "觸發死亡";
 
     private Transform mainCam;
     #endregion
 
     #region 狀態資料
-    public StateMachine stateMachine { get; private set; }
+   // public StateMachine stateMachine { get; private set; }
     public PlayerIdle idle { get; private set; }
     public PlayerWalk walk { get; private set; }
     public PlayerRun run { get; private set; }
@@ -65,12 +78,23 @@ public class Player : MonoBehaviour
             groundCheckRadius);
     }
 
-    private void Awake()
+    private void OnTriggerEnter(Collider other)
     {
+     // 如果碰到物件 嘗試取得敵人攻擊物件 有資料 就造成傷害
+        if (other.TryGetComponent(out AttackSystemEnemy attackObject))
+        {
+            Damage(attackObject.AttackPower);
+        }
+    }
+
+    protected override void Awake()
+    {
+        base.Awake();                     //繼承父類別的Awake方法
         HideMouse();                            //隱藏滑鼠
 
-        ani = GetComponent<Animator>();         //取得動畫元件
-        rig = GetComponent<Rigidbody>();        //取得剛體元件
+       // ani = GetComponent<Animator>();         //取得動畫元件
+       // rig = GetComponent<Rigidbody>();        //取得剛體元件
+
         mainCam = Camera.main.transform;       //取得主攝影機的變形元件 (貼 MainCamera 標簽)
 
         #region 狀態實例化
@@ -157,4 +181,22 @@ public class Player : MonoBehaviour
         }
     }
 
+    protected override void Damage(float damage)
+    {
+        base.Damage(damage);
+        CameraShake.instance.ShakeCamera(0.2f, 7, 10f);
+        StartCoroutine(DamageEffect(0.5f, 0.2f));
+
+    }
+
+    protected override void Dead()
+    {
+        base.Dead();
+        gameObject.layer = 0; //死亡後設置為預設圖層
+        onDead?.Invoke(); //觸發死亡事件(?指的是如果有訂閱此事件才觸發)
+
+        Cursor.visible = true; //顯示滑鼠
+        Cursor.lockState = CursorLockMode.None; //取消鎖定滑鼠
+        GameFlowManager.instance.ShowFinish("逃脫失敗!"); 
+    }
 }
