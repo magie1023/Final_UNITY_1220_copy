@@ -3066,7 +3066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -81.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &703913913
@@ -3418,7 +3418,7 @@ GameObject:
   - component: {fileID: 756982924}
   - component: {fileID: 756982923}
   m_Layer: 5
-  m_Name: "\u6587\u5B57_\u6E05\u9664\u6240\u6709\u6575\u4EBA"
+  m_Name: "\u6587\u5B57_2026"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3440,8 +3440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 303.40002, y: 50}
+  m_AnchoredPosition: {x: 49.5, y: 0}
+  m_SizeDelta: {x: 372.82, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &756982923
 MonoBehaviour:
@@ -3463,7 +3463,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u6E05\u9664\u6240\u6709\u6575\u4EBA : 0/6"
+  m_text: 2020 / 2026
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cbf4ffb3471758b43b869f8e195cbb8d, type: 2}
   m_sharedMaterial: {fileID: -2482928388483867186, guid: cbf4ffb3471758b43b869f8e195cbb8d, type: 2}
@@ -3497,7 +3497,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5113,7 +5113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: 219.77}
   m_SizeDelta: {x: 579.6, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1348315767
@@ -7157,7 +7157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 234}
+  m_AnchoredPosition: {x: 0, y: 146.08}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1946381848
@@ -7453,7 +7453,7 @@ MonoBehaviour:
   <runSpeed>k__BackingField: 5
   <jumpHeight>k__BackingField: 5
   <turnSpeed>k__BackingField: 15
-  <BreakComboTime>k__BackingField: 1
+  <BreakComboTime>k__BackingField: 0.255
   groundCheckRadius: 0.2
   groundCheckOffsetY: 0
   layerCanJump:

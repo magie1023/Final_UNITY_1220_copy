@@ -31,9 +31,9 @@ public class GameFlowManager : MonoBehaviour
         textFinish = GameObject.Find("文字_結束標題").GetComponentInChildren<TMP_Text>();
         btnReplay = GameObject.Find("按鈕_重新挑戰").GetComponent<Button>();
         btnQuit = GameObject.Find("按鈕_退出").GetComponent<Button>();
-        textEnemyCount = GameObject.Find("文字_清除所有敵人").GetComponentInChildren<TMP_Text>();
+        textEnemyCount = GameObject.Find("文字_2026").GetComponentInChildren<TMP_Text>();
         enemyCountMax = GameObject.FindGameObjectsWithTag("敵人").Length;
-        textEnemyCount.text = $"清除所有敵人 ： 0 / {enemyCountMax}";
+        textEnemyCount.text = $"2020 / 202{enemyCountMax}";
 
         btnReplay.onClick.AddListener(() =>
         {
@@ -51,14 +51,14 @@ public class GameFlowManager : MonoBehaviour
     ///</summary>
     public void KillEnemy()
     {
-      enemyCountKill++;
-      textEnemyCount.text = $"清除所有敵人 ： {enemyCountKill} / {enemyCountMax}";
+        enemyCountKill++;
+        textEnemyCount.text = $"202{enemyCountKill} / 202{enemyCountMax}";
 
         if (enemyCountKill >= enemyCountMax)
-       {
+        {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            ShowFinish("任務完成！");
+            ShowFinish("Welcome To 2026！");
         }
     }
 
