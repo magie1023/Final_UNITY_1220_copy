@@ -36,8 +36,9 @@ public class PlayerState : State
         base.Update();
         inputH = Input.GetAxis("Horizontal");   //獲得玩家水平輸入 A -1, D +1 沒按 0
         inputV = Input.GetAxis("Vertical");     //獲得玩家垂直輸入 W +1, S -1 沒按 0
+        Vector3 move = new Vector3(inputH, 0, inputV);
         //累加時間到計時器內
         // Time.deltaTime 每個影格的時間 大約是0.02秒
-      //  timer += Time.deltaTime;
+        //  timer += Time.deltaTime;
     }
 }

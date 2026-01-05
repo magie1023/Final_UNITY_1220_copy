@@ -1,0 +1,13 @@
+{
+    "asset": "eb8f386b233615a4887ca2f26b6cad7c",
+    "fileName": "019b8d85-5dee-7736-8b16-8ec9c19d3ba5.wav",
+    "prompt": "Non-verbal sound effect only. Robotic enemy death sound effect. Systems failing, power shutting down, unstable electrical crackle, mechanical collapse, metal parts loosening, and a final power-off tone. No voice, no speech. Clean and game-ready.\r\n",
+    "negativePrompt": "No speech, no talking, no words, no dialogue, no human voice, no creature sounds, no emotional acting, no screaming, no gore, no blood sounds, no music, no ambience, no background noise, no echo, no reverb.\r\n",
+    "model": "5de0686a-fb27-40e5-9df0-28ae810d70ca",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "55b462994fedd7382c95fc7f46ef4e75",
+    "duration": 1.5,
+    "autoTrim": true,
+    "hasReference": false
+}

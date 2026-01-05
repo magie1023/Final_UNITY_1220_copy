@@ -51,11 +51,11 @@ public class GameFlowManager : MonoBehaviour
     ///</summary>
     public void KillEnemy()
     {
-        enemyCountKill++;
-        textEnemyCount.text = $"清除所有敵人 ： {enemyCountKill} / {enemyCountMax}";
+      enemyCountKill++;
+      textEnemyCount.text = $"清除所有敵人 ： {enemyCountKill} / {enemyCountMax}";
 
         if (enemyCountKill >= enemyCountMax)
-        {
+       {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             ShowFinish("任務完成！");

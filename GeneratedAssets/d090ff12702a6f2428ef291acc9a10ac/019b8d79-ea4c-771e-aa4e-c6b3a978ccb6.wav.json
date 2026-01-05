@@ -1,0 +1,13 @@
+{
+    "asset": "d090ff12702a6f2428ef291acc9a10ac",
+    "fileName": "019b8d79-ea4c-771e-aa4e-c6b3a978ccb6.wav",
+    "prompt": "A dying sound of a female character who is severely injured. Weak and shaky breathing, soft painful groans, light coughing, and a fading voice. Quiet, realistic, emotional but restrained. No screaming.\r\n",
+    "negativePrompt": "No screaming, no shouting, no exaggerated acting, no gore, no blood splatter sounds, no horror effects, no distortion, no echo, no reverb, no background noise, no male voice.\r\n",
+    "model": "6be7790d-b2f4-4fe0-8ca2-76ddaaf94361",
+    "modelName": "ElevenLabs Multilingual V2",
+    "customSeed": -1,
+    "w3CTraceId": "fa6772e6e75bafb1c9aa7c9fe5024691",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

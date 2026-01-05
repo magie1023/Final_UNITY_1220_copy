@@ -53,7 +53,7 @@ public class Enemy : Character
     /// </summary>
     private Transform rootHp;
 
-    private UIFollow3DObject uiFollow3DObject;
+    private UIFollow3DObject uiFollow3D;
 
     [field: SerializeField]
     public CanvasGroup groupHp { get; private set; }
@@ -91,8 +91,8 @@ public class Enemy : Character
         textHp = tempHp.transform.Find("文字_血量_敵人").GetComponent<TMPro.TMP_Text>();
         groupHp = tempHp.GetComponent<CanvasGroup>();
 
-        uiFollow3DObject = tempHp.GetComponent<UIFollow3DObject>();
-        uiFollow3DObject.UpdateTargetAndOffset(transform, new Vector3(0, 2.5f, 0));
+        uiFollow3D = tempHp.GetComponent<UIFollow3DObject>();
+        uiFollow3D.UpdateTargetAndOffset(transform, new Vector3(0, 2.5f, 0));
 
         base.Awake();
 

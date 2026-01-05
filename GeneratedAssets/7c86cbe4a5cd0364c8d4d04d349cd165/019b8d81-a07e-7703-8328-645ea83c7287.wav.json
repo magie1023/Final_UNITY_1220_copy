@@ -1,0 +1,13 @@
+{
+    "asset": "7c86cbe4a5cd0364c8d4d04d349cd165",
+    "fileName": "019b8d81-a07e-7703-8328-645ea83c7287.wav",
+    "prompt": "Non-verbal robotic hit sound effect. Short metallic hit, servo strain, brief electrical glitch. Dry, sharp, no voice.\r\n",
+    "negativePrompt": "No speech, no talking, no words, no dialogue, no human voice, no emotional acting, no screaming, no creature sounds, no gore, no blood sounds, no music, no ambience, no background noise, no echo, no reverb.\r\n",
+    "model": "5de0686a-fb27-40e5-9df0-28ae810d70ca",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "7e1d6127843c737b467471bdc3ba559c",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

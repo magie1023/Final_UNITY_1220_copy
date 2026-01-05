@@ -1,0 +1,13 @@
+{
+    "asset": "d090ff12702a6f2428ef291acc9a10ac",
+    "fileName": "019b8d7c-02db-703c-b68f-d735a9378b1b.wav",
+    "prompt": "Short death sound of a female character. Painful breath, brief cough, quiet groan, then silence. Natural and subtle.",
+    "negativePrompt": "No screaming, no shouting, no exaggerated acting, no gore, no blood splatter sounds, no horror effects, no distortion, no echo, no reverb, no background noise, no male voice.\r\n",
+    "model": "5de0686a-fb27-40e5-9df0-28ae810d70ca",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "92833f324928b433d5a3fd7e960099c3",
+    "duration": 1.0,
+    "autoTrim": true,
+    "hasReference": false
+}

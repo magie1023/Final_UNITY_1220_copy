@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
+using UnityEngine;
+
 
 ///<summary>
 ///玩家類別：記錄玩家資料與相關功能
